@@ -14,6 +14,8 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 @font-face {
     font-family: 'Another Typewriter';
@@ -62,6 +64,7 @@ html {
 .headerImg {
     padding-bottom: 50px;
     height: 420px;
+    display: inline-flex;
 }
 
 .nav {
@@ -311,10 +314,6 @@ input {
 /*-----------Responsive-----------*/
 
 @media (max-width: 575.98px) { 
-    body {
-    background-color: white;
-    overflow-x: hidden;
-    } 
     .info {
     text-align: center;
     font-size: 25px;
@@ -348,30 +347,30 @@ form{
         height: 500px;
     }
 }
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { 
-.forms {
-    display: block;
+/*------767px------*/
+@media (max-width:767px ) { 
+    .info {
     text-align: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 25px;
+    width: 350px;
+    height: 140px;
+    margin: auto;
+    padding-bottom: 54.5px;
+}
+    .mobileLinks{
+      visibility: hidden;
+      display: none;
+    }
 }
 
+@media (max-width: 992px ) { 
+    .mobileLinks{
+      visibility: hidden;
+      display: none;
+    }
 }
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { 
-.forms {
-    display: block;
-    text-align: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-}
 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { body {background-color: red;} }
-
+.headerHero {
+    display: inline-flex;
+}
