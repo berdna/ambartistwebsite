@@ -5,24 +5,36 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="main.css">
-<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
-<header class="landing" id="landing">
-  <div class="nav"><img class="logo" src="assets/ambartistlo.svg"><a href="#landing">home</a><a href="#about">about us</a><a href="#artists">artists</a><a href="#new">what's new</a><a href="#submissions">submissions</a><a href="#contact">contact</a></div>
+    
+<body>
+<div class="landing" id="landing">
+  <div class="nav">
+      <img class="logo" src="assets/ambartistlo.svg">
+        <a class="mobileLinks" href="#landing">home</a>
+        <a class="mobileLinks" href="#about">about us</a>
+        <a class="mobileLinks" href="#artists">artists</a>
+        <a class="mobileLinks" href="#new">what's new</a>
+        <a class="mobileLinks" href="#submissions">submissions</a>
+        <a class="mobileLinks" href="#contact">contact</a>
+    </div>
+    
   <div class="mSection">
-    <div class="variable-width"><img class="headerImg" src="assets/IMG_9120.jpg"><img class="headerImg" src="assets/Gracie-Abrams-21-758x758.jpg">
-      <!-- <img class="headerImg" src="assets/tumblr_p5z3v5cYKA1wbdiu1o1_500.jpg"> -->
-      <img class="headerImg" src="assets/Fiji-Macintosh.jpg"></div>
+      
+      <!--  <img class="headerImg" src="assets/tumblr_p5z3v5cYKA1wbdiu1o1_500.jpg"> -->
+           <!-- <img class="headerImg" src="assets/Fiji-Macintosh.jpg"> -->
     
-    <!-- <img class="headerImg" src="assets/header_placeholder.svg"> -->
+      
+      
     
+    <img class="headerImg" src="assets/header_placeholder.svg">
+    <!--Header Text Here -->
     <h1 class="about" id="about">about us</h1>
     <p class="info">Representing the industries most promising talent &mdash; guiding careers every step of the way. We have a roster composed of grammy nominated artists &amp; producers</p>
-    <img class="line1" src="assets/line1.svg"></div>
-</header>
+    <img class="line1" src="assets/line1.svg">
+    </div>
+</div>
 
-<body>
 <div class="theartists" id="artists">
   <h3 class="subscript">the</h3>
   <h1 class="mainscript">artists</h1>
@@ -60,18 +72,18 @@
   <h3 class="subscript">what's</h3>
   <h1 class="mainscript">new</h1>
   <div class="nCards">
-    <div class="nCard">
+    <div class="nCardInsta">
       <p>instagram</p>
       <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
       <iframe src="//lightwidget.com/widgets/0bcef6787b1c50d2a6652baeffbe1bc4.html" scrolling="no" allowtransparency="true" class="lightwidget-widget"></iframe>
     </div>
-    <div class="nCard">
+    <div class="nCardMobile">
       <p>spotify</p>
       <iframe class="nCardImg" src="https://open.spotify.com/embed/playlist/1xZ4pUdDKwsYZnMwzFvGnc" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
     <div class="nCard">
       <p>twitter</p>
-      <a class="twitter-timeline" href="https://twitter.com/ambartists?ref_src=twsrc%5Etfw" >Tweets by ambartists</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+      <a class="twitter-timeline" href="https://twitter.com/ambartists?ref_src=twsrc%5Etfw" data-width="500" data-height="500">Tweets by ambartists</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
     </div>
   </div>
 </div>
@@ -111,10 +123,7 @@
     <p>Site Design by: Andre Barnes</p>
   </footer>
 </div>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
-<script type="text/javascript" src="slick/slick.min.js"></script> 
+
 
 <script>
 $(document).ready(function(e) {
@@ -145,24 +154,9 @@ $(document).ready(function(e) {
 		});
 	});    
 });
-</script> 
-
-<script type="text/javascript">
-            $(document).ready(function(){
-            $('.variable-width').slick({
-				setting-name: variableWidth
-            });
-            });
-            
-            $('.variable-width').slick({
-              dots: true,
-              infinite: true,
-              speed: 300,
-              slidesToShow: 1,
-              centerMode: true,
-              variableWidth: true,
-              autoplay: true
-});
-  </script>
+</script>   
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
 </body>
 </html>

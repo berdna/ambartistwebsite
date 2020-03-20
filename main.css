@@ -207,7 +207,13 @@ margin: 0 auto;
     border: 0;
     overflow: hidden;
 }
+.nCardMobile {
+    padding-right: 52px;
+}
 
+.nCardInsta {
+    display: none;
+}
 
 
 /*----------SCREEN 4-----------*/
@@ -254,8 +260,8 @@ input {
 }
 
 .forms {
-    display: inline-flex;
-    text-align: center;
+    display: block;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
 }
@@ -284,7 +290,6 @@ input {
 /*--------------JS WIDGET SLICK SLIDER------------*/
 
 .variable-width {
-    overflow: hidden;
 }
 
 
@@ -304,3 +309,69 @@ input {
 
 
 /*-----------Responsive-----------*/
+
+@media (max-width: 575.98px) { 
+    body {
+    background-color: white;
+    overflow-x: hidden;
+    } 
+    .info {
+    text-align: center;
+    font-size: 25px;
+    width: 350px;
+    height: 140px;
+    margin: auto;
+    padding-bottom: 54.5px;
+}
+.forms {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+form{
+    justify-content: center;
+    }
+.sub {
+   text-align: left; 
+}
+.mobileLinks{
+      visibility: hidden;
+      display: none;
+    }
+    .nCard {
+        display: none;
+    }
+    .nCardImg {
+        width: 300px;
+        height: 500px;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+.forms {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+.forms {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { body {background-color: red;} }
+
