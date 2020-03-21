@@ -93,7 +93,8 @@
   <h3 class="subscript">demo</h3>
   <h1 class="mainscript">submissions</h1>
   <p class="looking">we are always looking for new talent</p>
-  <form id="contactForm" method="post" onSubmit="return false">
+ <!--
+  <form id="contactForm" method="POST" onSubmit="return false">
   <div class="forms">
     <div class="form">
       <p class="sub">name :</p>
@@ -112,11 +113,11 @@
   <div style="clear:both"></div>
   <div class="alert alert-success message success" style="display:none; color: #155724; background-color: #d4edda; border-color: #c3e6cb;position: relative; padding: .75rem 1.25rem; margin-bottom: 1rem; border: 1px solid transparent; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-radius: .25rem;">Thank You, we'll get back you soon. </div>
   <div class="alert alert-success message failure" style="display:none; color: #721c24; background-color: #f8d7da; border-color: #f5c6cb;;position: relative; padding: .75rem 1.25rem; margin-bottom: 1rem; border: 1px solid transparent; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-radius: .25rem;">Sorry, Please try again. </div>              
-  <button type="submit" class="submit" id="btnSubmit">Submit</button>
-  </form>
+  <button type="submit" class="submit" id="btnSubmit" value="Send">Submit</button>
+  </form> -->
   <div class="contact" id="contact">
     <h3 class="subscript">contact</h3>
-    <p class="looking">for all other inquiries: </p>
+    <p class="looking">for all inquiries: </p>
     <p class="looking">info@ambartists.com</p>
   </div>
   <footer>
@@ -133,14 +134,14 @@ $(document).ready(function(e) {
 	$("form#contactForm").submit(function(){
 		$("button#btnSubmit").attr('disabled',true);
 		$("button#btnSubmit").html('Please wait...');
-		var aUrl = 'sendmail.php?xAction=sendMail&'+$("form#contactForm").serialize();
+		var aUrl = 'amazon-ses-smtp-sample.php?'+$("form#contactForm").serialize();
 		$.ajax({
 			type:'POST',
 			url:aUrl,
 			success: function(data){
 				$("button#btnSubmit").attr('disabled',false);
 				$("button#btnSubmit").html('Submit');
-				if(data == 'OK'){
+				if(data == 'Email sent!'){
 					$("input[type='text']").val('');
 					$("input[type='email']").val('');
 					$("div.success").show();

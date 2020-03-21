@@ -5,6 +5,7 @@ if($_REQUEST['xAction'] == 'sendMail'){
 	$mail->From = trim($_REQUEST['emailID']);
 	$mail->FromName = trim($_REQUEST['fullName']);
 	$mail->AddAddress('info@ambartists.com');
+	$mail->AddAddress('drexatl@gmail.com');
 	$mail->Subject = "Inquiry from website";
 	$mail->Body = '
 	<p><strong>Name</strong>: '.$_REQUEST['fullName'].'<br /></p>
